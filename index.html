@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Digital Tasbih</title>
+    <!-- Tailwind and Daisy UI CDN -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.6.2/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <main>
+      <section>
+        <h2 class="text-5xl my-6 text-center">Digital Tasbih</h2>
+        <div class="mt-8 grid grid-cols-1 gap-7 md:grid-cols-3">
+          <div class="card bg-base-100 border">
+            <div class="card-body items-center text-center">
+              <h2 class="card-title">SubhanAllah</h2>
+              <p class="text-3xl font-bold my-3" id="subhanAllahCount">0</p>
+              <div class="card-actions">
+                <button
+                  class="btn btn-active btn-accent text-white"
+                  id="subhanAllahIncrementBtn"
+                >
+                  Increment
+                </button>
+                <button
+                  class="btn btn-active btn-secondary"
+                  id="subhanAllahDecrementBtn"
+                >
+                  Decrement
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="card bg-base-100 border">
+            <div class="card-body items-center text-center">
+              <h2 class="card-title">Alhamdulillah</h2>
+              <p class="text-3xl font-bold my-3" id="alhamdulillahCount">0</p>
+              <div class="card-actions">
+                <button
+                  class="btn btn-active btn-accent text-white"
+                  id="alhamdulillahIncrementBtn"
+                >
+                  Increment
+                </button>
+                <button
+                  class="btn btn-active btn-secondary"
+                  id="alhamdulillahDecrementBtn"
+                >
+                  Decrement
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="card bg-base-100 border">
+            <div class="card-body items-center text-center">
+              <h2 class="card-title">Allahuakbar</h2>
+              <p class="text-3xl font-bold my-3" id="allahuakberCount">0</p>
+              <div class="card-actions">
+                <button
+                  class="btn btn-active btn-accent text-white"
+                  id="allahuakberIncrementBtn"
+                >
+                  Increment
+                </button>
+                <button
+                  class="btn btn-active btn-secondary"
+                  id="allahuakberDecrementBtn"
+                >
+                  Decrement
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="text-center mt-10">
+          <button class="btn btn-error text-white" id="resetBtn">
+            Reset All
+          </button>
+        </div>
+      </section>
+    </main>
+    <!-- JS -->
+    <script src="js/script.js"></script>
+  </body>
+</html>
